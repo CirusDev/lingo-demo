@@ -5,13 +5,13 @@ import Image from "next/image"
 type Props = {
   id:         number
   title:      string
-  imageSrc:   string
+  imgSrc:   string
   onClick:    (id:number) => void
   disable?:   boolean
   active?:    boolean
 }
 
-export const Card = ({ id, title, imageSrc, onClick, disable, active }:Props) => {
+export const Card = ({ id, title, imgSrc, onClick, disable, active }:Props) => {
   return (
     <div
       className={cn(
@@ -30,7 +30,7 @@ export const Card = ({ id, title, imageSrc, onClick, disable, active }:Props) =>
 
       <Image 
         alt=""
-        src={imageSrc}
+        src={imgSrc}
         width={100}
         height={70}
         className="rounded-lg drop-shadow-md border object-cover"

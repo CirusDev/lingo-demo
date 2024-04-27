@@ -34,7 +34,7 @@ export const List = ({ courses, activeCourseId }:Props) => {
           key={course.id}
           id={course.id}
           title={course.title}
-          imageSrc={course.imgSrc}
+          imgSrc={course.imgSrc}
           onClick={() => onClick(course.id)}
           disable={pending}
           active={course.id === activeCourseId}
