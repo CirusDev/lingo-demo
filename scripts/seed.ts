@@ -17,22 +17,22 @@ const main = async() => {
       {
         id:       1,
         title:    "Spanish",
-        imgSrc:   "/es.png"
+        imageSrc:   "/es.png"
       },
       {
         id:       2,
         title:    "Italian",
-        imgSrc:   "/it.png"      
+        imageSrc:   "/it.png"      
       },
       {
         id:       3,
         title:    "French",
-        imgSrc:   "/fr.png"
+        imageSrc:   "/fr.png"
       },
       {
         id:       4,
         title:    "English",
-        imgSrc:   "/us.png"
+        imageSrc:   "/us.png"
       }
     ])
 

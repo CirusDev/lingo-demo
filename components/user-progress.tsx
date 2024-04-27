@@ -18,7 +18,7 @@ export const UserProgress = ({ activeCoure, hearts, points, hasActiveSubscriptio
       <Link href={'/courses'}>
         <Button variant={'ghost'}>
           <Image
-            src={activeCoure.imgSrc}
+            src={activeCoure.imageSrc}
             alt={activeCoure.title}
             className="rounded-lg border"
             width={34}
