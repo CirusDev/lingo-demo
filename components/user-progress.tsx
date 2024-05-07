@@ -51,10 +51,12 @@ export const UserProgress = ({ activeCoure, hearts, points, hasActiveSubscriptio
             height={22}
           />
 
-          {hasActiveSubscription ? <InfinityIcon className="h-4 w-4 stroke-2" /> : hearts}
+          {hasActiveSubscription 
+            ? <InfinityIcon className="h-6 w-6 stroke-2" /> 
+            : hearts
+          }
         </Button>
-      </Link>
-      
+      </Link>      
     </div>
   )
 }

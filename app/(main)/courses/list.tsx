@@ -4,7 +4,7 @@ import { courses, userProgress } from "@/db/schema"
 import { Card } from "./card"
 import { useRouter } from "next/navigation"
 import { useTransition } from "react"
-import { upsertUserProgress } from "./actions/user-progress"
+import { upsertUserProgress } from "../../../actions/user-progress"
 import { toast } from "sonner"
 
 type Props = {

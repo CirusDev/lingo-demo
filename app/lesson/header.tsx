@@ -24,14 +24,14 @@ export const Header = ({hearts, percentage, hasActiveSubscription }: Props) => {
         <Image
           src="/heart.png"
           alt="heart"
-          height={28}
-          width={28}
+          height={26}
+          width={26}
           className="mr-2"
         />
 
         {hasActiveSubscription
-        ? <InfinityIcon className="h-6 w-6 stroke-2" />
-        : hearts
+          ? <InfinityIcon className="h-6 w-6 stroke-2 shrink-0" />
+          : hearts
         }
 
       </div>

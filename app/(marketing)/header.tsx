@@ -26,11 +26,13 @@ const Header = () => {
 
         <ClerkLoaded>
           <SignedIn>
-            <UserButton
-              afterSignOutUrl='/'
-            />
+            <div className="flex border border-sky-400 w-10 h-10 items-center justify-center rounded-full">
+              <UserButton
+                afterSignOutUrl='/'
+              />
+            </div>
           </SignedIn>
-
+          
           <SignedOut>
             <SignInButton
               mode='modal'

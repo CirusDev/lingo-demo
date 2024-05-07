@@ -1,8 +1,11 @@
-import { cn } from "@/lib/utils"
-import Image from "next/image"
+"use client"
+
 import Link from "next/link"
-import SidebarItem from "./sidebar-item"
+import Image from "next/image"
 import { ClerkLoaded, ClerkLoading, SignedIn, UserButton } from "@clerk/nextjs"
+
+import SidebarItem from "./sidebar-item"
+import { cn } from "@/lib/utils"
 import { Loader } from "lucide-react"
 
 type Props = {
@@ -15,7 +18,7 @@ const Sidebar = ({ className }:Props) => {
       'flex flex-col h-full lg:w-64 lg:fixed left-0 top-0 px-4 border-r-2',
       className
     )}>
-      <Link href={'/learn'}>
+      <Link href={'/'}>
         <div className='pt-8 pl-4 pb-7 flex items-center gap-x-3'>
           <Image 
             src={'/mascot.png'}
@@ -43,7 +46,7 @@ const Sidebar = ({ className }:Props) => {
         
         <SidebarItem 
           label="quests" 
-          href="/questa" 
+          href="/quests" 
           iconSrc="/quest.png" 
         />
         
@@ -61,9 +64,18 @@ const Sidebar = ({ className }:Props) => {
 
         <ClerkLoaded>
           <SignedIn>
-            <UserButton
-              afterSignOutUrl='/'
-            />
+            <div className="inline-flex items-center justify-center text-sm font-bold uppercase  text-slate-500 transition-none h-12 gap-y-2 w-full">
+              <div className="flex border border-sky-400 w-10 h-10 items-center justify-center rounded-full">
+                <UserButton
+                  afterSignOutUrl='/'
+                />
+              </div>
+
+              <h1 className="ml-5">
+                Profile
+              </h1>
+            </div>
+            
           </SignedIn>
         </ClerkLoaded>
       </div>

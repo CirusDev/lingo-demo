@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { Button } from './ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useBlurModal } from '@/store/use-blur-modal'
 
 type Props = {
   label:    string,
